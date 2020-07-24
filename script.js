@@ -5,8 +5,14 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
+  var values = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789!@#$%^&*(){<>?|";
+  
+  for (let i = 0; i < 10; i++) {
+        password = password + values.Math.floor(Math.random() * Math.floor(values.length - 1));
+    
+  }
 
-  passwordText.value = password;
+  passwordText.values = password;
 
 }
 
